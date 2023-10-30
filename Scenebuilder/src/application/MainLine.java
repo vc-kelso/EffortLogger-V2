@@ -1,3 +1,5 @@
+// This is the integrated system of EffortLogger V2. This should call all the prototypes.
+
 package application;
 
 //Interface for all prototypes
