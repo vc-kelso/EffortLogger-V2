@@ -13,16 +13,16 @@ public class MainLine {
 	
 	public static void main(String[] args) throws Exception {
 
-		String keystorePath = "C:\\Users\\duy67\\git\\EffortLoggerV2Rep\\Scenebuilder\\src\\application\\keystore.jks";
+		String keystorePath = "keystore.jks";
 		String keystorePassword = "3StInliWS633Z/QlHxaKLA==";
 		String keyalias = "mykeyalias";
 		
 		Encryption encrypt = new Encryption();
 		
 		try {
-			File readFile = new File("C:\\Users\\duy67\\git\\EffortLoggerV2Rep\\Scenebuilder\\src\\application\\input.txt");
+			File readFile = new File("input.txt");
 			Scanner scan = new Scanner(readFile);
-			FileOutputStream dataFile = new FileOutputStream("C:\\Users\\duy67\\git\\EffortLoggerV2Rep\\Scenebuilder\\src\\application\\encryptData.txt");
+			FileOutputStream dataFile = new FileOutputStream("encryptData.txt");
 			
             // Rotate key if 90 days have passed
 			SecretKey key = encrypt.getCurrentKey();
